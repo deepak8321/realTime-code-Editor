@@ -9,7 +9,7 @@ npm i express socket.io socket.io-client
 npm i socket.io socket.io-client
 
 Methode :- 1:- HTTPS
-git add .
+real-time-code-editor
 git commit -m 'initial'
 git remote add origin https://github.com/deepak8321/realTime-code-Editor.git
 git branch -M main
