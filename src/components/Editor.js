@@ -50,7 +50,7 @@ const Editor = ({socketRef,roomId, onCodeChange}) => {
     if (socketRef.current) {
       // listen code change:-
       socketRef.current.on(ACTIONS.CODE_CHANGE, ({code})=>{
-        console.log('reciveing last',code);
+        // console.log('reciveing last',code);
         if (code !== null) {
           editorRef.current.setValue(code);
         }

@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start:front": "react-scripts start",
-    "start": "npm build && && cd server/  npm server:prod",
+    "start": "npm run build && cd server/ && npm server:prod",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js", 
     "server:prod": "node server.js",

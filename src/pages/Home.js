@@ -28,7 +28,7 @@ const joinRoom = () =>{
     });
 }
 const handleInputEnter = (e)=>{
-    console.log('event',e.code); // enter press karke dekho
+    // console.log('event',e.code); // enter press karke dekho
     if (e.code === 'Enter') {
         joinRoom();
     }

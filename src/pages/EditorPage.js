@@ -28,7 +28,7 @@ function EditorPage() {
       socketRef.current.on('connect_failed', (err)=> handleErrors(err));
 
       function handleErrors(e) {
-        console.log('socket error', e);
+        // console.log('socket error', e);
         toast.error('Socket connection failed, try again later')
         reactNavigator('/');
       }
@@ -44,7 +44,7 @@ function EditorPage() {
         ({clients, username, socketId})=> {
           if (username !== location.state?.username) {
             toast.success(`${username} joined the room`);
-            console.log(`${username} joined`);
+            // console.log(`${username} joined`);
           }
           // clients vale State ke andar push kar rahe hai
           setClients(clients);
@@ -75,7 +75,7 @@ function EditorPage() {
         socketRef.current.off(ACTIONS.JOINED);
         socketRef.current.off(ACTIONS.DISCONNECTED);
       } else {
-        console.log('Socket reference is null or undefined');
+        // console.log('Socket reference is null or undefined');
       }
     }
     

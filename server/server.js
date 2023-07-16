@@ -37,7 +37,7 @@ function getAllConnectedClients(roomId) {
 // jab connection bannega tab socket wala  function call hoga
 // socket--> client ki information store hoti hai
 io.on('connection', (socket)=>{
-    console.log('socket connected',socket.id);
+    // console.log('socket connected',socket.id);
 
     // Event ko Listen jar rahe hai frontend se aa raha
     // sabhi user ki socket ko store kar rahe hai 
@@ -83,5 +83,5 @@ io.on('connection', (socket)=>{
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, ()=>{
-    console.log(`Listing on port ${PORT}`);
+    // console.log(`Listing on port ${PORT}`);
 })

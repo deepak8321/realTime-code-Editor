@@ -18,6 +18,16 @@ username password lage ga
 
 for previous remote remove:- git remote rm origin
 
+
 Methode :- SSH
+first set up ssh key:-
+ssh-keygen -t ed25519 -C "deepakcsit0101@gmail.com"
+Enter passphrase... Enter press
+cd .ssh/
+ls -lrt
+cat id_ed25519.pub
+copy:-
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE7lXrtxdzjssR/5AXQALzZEccsPbMZHKDSJBvmIs+pT deepakcsit0101@gmail.com
+https://github.com/settings/ssh/new:- paste key
 git add .
 git commit -m 'initial'
